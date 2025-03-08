@@ -1,0 +1,39 @@
+/* Reset dasar */
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Styling Header */
+header {
+  background: purple;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+article {
+  background: aqua;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 calc(50% - 10px); /* Perbaikan spacing pada calc() */
+  box-sizing: border-box;
+}
+
+/* Menghapus aturan yang salah pada article ke-5 */
