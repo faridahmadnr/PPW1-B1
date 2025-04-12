@@ -1,0 +1,639 @@
+:root {
+  --utama: #20140b;
+  --bg: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: black;
+  min-height: 2000px;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 800px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--utama);
+  opacity: 0.8;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  z-index: 1000;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  display: inline-flex;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: inline;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.bagian1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+}
+.bagian1 .content {
+  max-width: 100%;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bagian1 .content h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+.bagian1 .content p {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+.bagian1 .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 1rem;
+  background-color: var(--utama);
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.google-review {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.2); */
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.3rem;
+}
+
+.bagian1 h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.bagian2 {
+  padding: 8rem 2rem;
+  background-color: var(--utama);
+  min-height: auto;
+}
+
+.bagian2 h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.bagian2 h2 span {
+  color: white;
+}
+.bagian2 .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row-reverse;
+}
+
+.bagian2 .row .about-img {
+  flex: 1 1 45rem;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.bagian2 .row .about-img iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.bagian2 .row .content {
+  flex: 1 1 50rem;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  word-spacing: 5px;
+  font-size: 25px;
+}
+
+.bagian3 {
+  padding: 7rem 2rem;
+  background-color: #3d2418;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+}
+
+.product-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #865d3c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #f3c27b;
+}
+
+.bagian4 {
+  text-align: center;
+  background-color: var(--utama);
+  padding: 50px 20px;
+}
+
+.bagian4 h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Section Testimonials */
+.bagian4 {
+  text-align: center;
+  background-color: #20140b;
+  padding: 50px 20px;
+}
+
+.bagian4 h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #5b3c24;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.testimonial-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.testimonial-card p {
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.image-placeholder {
+  width: 80px;
+  height: 80px;
+  background: #c4a484;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+}
+
+/* bagian5 */
+.bagian5 {
+  text-align: left;
+  background: linear-gradient(145deg, #3d2418, #5a3825);
+  padding: 60px 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.bagian5 article {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease-in-out;
+}
+
+.bagian5 h1 {
+  font-size: 2.8rem;
+  color: #f3c27b;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #f3c27b;
+  padding-bottom: 20px;
+}
+
+.bagian5 h4 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  color: #fdd9a0;
+}
+
+.bagian5 p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 4px solid #f3c27b;
+  line-height: 1.6;
+}
+
+.bagian6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  background-color: #20140b;
+}
+.bagian6 h2 {
+  display: flex;
+}
+.bagian6 a {
+  background-color: #3d2418;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+
+.bagian6 .ano {
+  flex: 1 1;
+  padding: 1rem;
+  color: white;
+  text-align: left;
+  word-spacing: 5px;
+  font-size: 25px;
+  margin-left: 40px;
+  max-width: 45%;
+}
+footer {
+  background-color: #3d2418;
+  color: white;
+  padding: 40px 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column address {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.icon-email,
+.icon-phone,
+.icon-map {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .navbar {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .bagian1 .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .bagian1 .content p {
+    font-size: 1.3rem;
+  }
+
+  .bagian2 .row {
+    flex-direction: column;
+  }
+
+  .bagian2 .row .content {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .bagian6 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bagian6 .ano {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .bagian1 .content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .bagian1 .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .bagian1 .content p {
+    font-size: 1.1rem;
+  }
+
+  .bagian1 .content .cta {
+    padding: 0.8rem 2rem;
+  }
+
+  .google-review {
+    font-size: 1rem;
+  }
+
+  .stars {
+    font-size: 1.1rem;
+  }
+
+  .bagian2,
+  .bagian3,
+  .bagian4,
+  .testimonials,
+  .bagian5 {
+    padding: 4rem 1rem;
+  }
+
+  .bagian2 h2,
+  .product-title,
+  .bagian4 h1,
+  .bagian5 h1 {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    width: 220px;
+  }
+
+  .testimonial-card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+  }
+
+  .bagian1 .content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .bagian1 .content p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .bagian1 .content .cta {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .google-review {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .stars {
+    font-size: 0.9rem;
+  }
+
+  .bagian2 h2,
+  .product-title,
+  .bagian4 h1,
+  .bagian5 h1 {
+    font-size: 1.5rem;
+  }
+  .bagian2 .row .about-img {
+    position: relative;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .bagian2 .row .content {
+    font-size: 0.9rem;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .bagian5 article {
+    padding: 20px;
+  }
+
+  .bagian5 h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .bagian5 h4 {
+    font-size: 1.1rem;
+  }
+
+  .bagian5 p {
+    font-size: 0.9rem;
+  }
+
+  .footer-column {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bagian6 a {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar .navbar-nav a {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+  }
+
+  .bagian1 .content h1 {
+    font-size: 1.3rem;
+  }
+
+  .bagian1 .content p {
+    font-size: 0.8rem;
+  }
+}
