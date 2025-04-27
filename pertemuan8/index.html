@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, "/>
+    <title>Coklat Jogja</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg position-absolute top-0 start-50 translate-middle-x mt-5 z-3" style="max-width: 800px; background-color: var(--utama); opacity: 0.8; border-radius: 10px;">
+        <div class="container-fluid justify-content-around">
+          <a class="navbar-brand fs-2 fw-bold fst-italic text-white" href="#">Coklat <span>Yk</span>.</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav fs-5 gap-3">
+              <a class="nav-link text-white" href="#home">Home</a>
+              <a class="nav-link text-white" href="#about">Tentang kami</a>
+              <a class="nav-link text-white" href="#produk">Prodak</a>
+              <a class="nav-link text-white" href="#contact">Kontak</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="min-vh-100 d-flex align-items-center position-relative" id="home" style="background: url('back.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 position-absolute top-50 start-0 translate-middle-y text-white ps-5">
+              <h1 class="mb-1" style="font-size: 2.6rem; text-align: left;">
+                <span class="fw-bold">Coklat</span> <span class="fw-bold">Yogyakarta</span>
+              </h1>
+              <p class="mt-1 mb-3 ps-0" style="font-size: 1.6rem; font-weight: 300; line-height: 1.4; text-align: left;">
+                Manis tapi ga nyakitin
+              </p>
+              <a href="#produk" class="btn mt-3 py-3 px-5 fs-5 fw-bold text-white border-0" 
+                 style="
+                   background: linear-gradient(135deg, #6D4C41 0%, #8D6E63 50%, #6D4C41 100%);
+                   border-radius: 10px; 
+                   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+                   opacity: 0.9;
+                   letter-spacing: 1px;
+                 ">
+                Beli Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="position-absolute start-50 translate-middle-x bottom-0 d-flex align-items-center justify-content-center text-white fs-5 mb-3 p-3">
+          <span class="me-2">4.5</span>
+          <div class="text-warning me-2" style="font-size: 1.3rem;">★★★★☆</div>
+          <span>Google Review</span>
+        </div>
+      </section>
+      <section class="py-5" id="about" style="background-color: var(--utama); min-height: auto;">
+        <div class="container py-5">
+          <div class="row flex-column-reverse flex-lg-row align-items-center g-4">
+            <!-- Video Column -->
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/xDwY8Xv5czk?si=VnLHBQNVETbbfVXX" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
+                        style="border-radius: 10px;"></iframe>
+              </div>
+            </div>
+            
+            <!-- Content Column -->
+            <div class="col-lg-6 text-center text-white px-3">
+              <h2 class="display-4 mb-4">Who Are We?</h2>
+              <p class="fs-3" style="word-spacing: 5px; line-height: 1.6;">
+                Kami memulai dari kecintaan terhadap coklat dan keinginan
+                menggunakan biji kakao pilihan dan proses yang teliti,
+                kami menciptakan coklat dengan cita rasa autentik dan berkualitas.
+                untuk menghadirkan sesuatu yang lebih dari sekadar camilan.
+                Bagi kami, coklat adalah kebahagiaan dalam setiap
+                gigitan sederhana, manis, dan penuh kenangan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" id="produk" style="background-color: #3d2418; color: white;">
+        <div class="container py-4">
+          <h1 class="text-center mb-5 display-3" style="letter-spacing: 2px;">Produk</h1>
+          
+          <div class="row g-4 justify-content-center">
+            <!-- Product Card 1 -->
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex">
+              <div class="product-card p-3 text-center w-100" 
+                   style="background-color: #865d3c; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+                <img src="dark.webp" alt="Dark Chocolate" class="img-fluid rounded mb-3" style="border-radius: 8px !important; height: 200px; object-fit: cover;">
+                <h2 class="fs-3 mb-2">Dark Chocolate Classic</h2>
+                <p class="fs-4 mb-0" style="color: #f3c27b;">Rp 45.000</p>
+              </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex">
+              <div class="product-card p-3 text-center w-100" 
+                   style="background-color: #865d3c; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+                <img src="orange.webp" alt="Milk Chocolate" class="img-fluid rounded mb-3" style="border-radius: 8px !important; height: 200px; object-fit: cover;">
+                <h2 class="fs-3 mb-2">Milk Chocolate Delight</h2>
+                <p class="fs-4 mb-0" style="color: #f3c27b;">Rp 40.000</p>
+              </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex">
+              <div class="product-card p-3 text-center w-100" 
+                   style="background-color: #865d3c; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+                <img src="cashew.webp" alt="White Chocolate" class="img-fluid rounded mb-3" style="border-radius: 8px !important; height: 200px; object-fit: cover;">
+                <h2 class="fs-3 mb-2">White Chocolate Dream</h2>
+                <p class="fs-4 mb-0" style="color: #f3c27b;">Rp 42.000</p>
+              </div>
+            </div>
+            
+            <!-- Product Card 4 (Fixed) -->
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex">
+              <div class="product-card p-3 text-center w-100" 
+                   style="background-color: #865d3c; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+                <img src="volcanic.webp" alt="Hazelnut Chocolate" class="img-fluid rounded mb-3" style="border-radius: 8px !important; height: 200px; object-fit: cover;">
+                <h2 class="fs-3 mb-2">Hazelnut Chocolate Premium</h2>
+                <p class="fs-4 mb-0" style="color: #f3c27b;">Rp 50.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .product-card {
+          padding-top: 10px !important;
+        }
+        .product-card:hover {
+          transform: translateY(-10px) !important;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5) !important;
+        }
+      </style>
+      <section class="py-5" id="testimoni" style="background-color: #20140b; text-align: center;">
+        <div class="container">
+          <h1 class="text-white mb-5" style="font-size: 40px;">What Our Customers Say</h1>
+          
+          <div class="row g-4 justify-content-center">
+            <!-- Testimonial 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="testimonial-card p-4 text-center h-100" 
+                   style="background: #5b3c24; border-radius: 10px; color: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+                <img src="p1.jpeg" alt="Amelia" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid white;">
+                <h3 class="fs-5 mb-3">Amelia</h3>
+                <p class="fst-italic lh-sm" style="font-size: 0.9rem;">"Cokelatnya lembut banget dan rasa hazelnut-nya bikin ketagihan. Ini cokelat terenak yang pernah saya coba!"</p>
+              </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="testimonial-card p-4 text-center h-100" 
+                   style="background: #5b3c24; border-radius: 10px; color: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+                <img src="p2.jpeg" alt="Dion" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid white;">
+                <h3 class="fs-5 mb-3">Dion</h3>
+                <p class="fst-italic lh-sm" style="font-size: 0.9rem;">"Packaging-nya elegan dan cocok banget buat hadiah. Teman saya senang sekali saat menerima cokelat ini."</p>
+              </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="testimonial-card p-4 text-center h-100" 
+                   style="background: #5b3c24; border-radius: 10px; color: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+                <img src="p3.jpeg" alt="Nadia" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid white;">
+                <h3 class="fs-5 mb-3">Nadia</h3>
+                <p class="fst-italic lh-sm" style="font-size: 0.9rem;">"Dark chocolate-nya pas banget manis dan pahitnya. Cocok buat pecinta cokelat asli seperti saya."</p>
+              </div>
+            </div>
+            
+            <!-- Testimonial 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="testimonial-card p-4 text-center h-100" 
+                   style="background: #5b3c24; border-radius: 10px; color: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+                <img src="p4.jpeg" alt="Raka" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid white;">
+                <h3 class="fs-5 mb-3">Raka</h3>
+                <p class="fst-italic lh-sm" style="font-size: 0.9rem;">"Saya beli untuk hampers lebaran, semuanya suka! Kualitas dan rasanya premium banget."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .testimonial-card:hover {
+          transform: translateY(-5px) !important;
+        }
+      </style>
+      
+      
+      <section class="py-5" id="ask" style="background: linear-gradient(145deg, #3d2418, #5a3825); color: white; font-family: 'Poppins', sans-serif;">
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <article class="p-5" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 20px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); backdrop-filter: blur(6px); transition: all 0.3s ease-in-out;">
+                <h1 class="text-center mb-5 pb-3 display-4" style="color: #f3c27b; border-bottom: 2px solid #f3c27b; font-size: 2.8rem;">Frequently Asked Question</h1>
+                
+                <div class="faq-item mb-4">
+                  <h4 class="fs-3" style="color: #fdd9a0; margin-top: 30px;">Q: Cokelat ini terbuat dari apa?</h4>
+                  <p class="fs-5 ps-3" style="border-left: 4px solid #f3c27b; line-height: 1.6; margin-top: 10px;">A: Cokelat kami dibuat dari biji kakao premium yang dipilih secara khusus dan diolah secara tradisional.</p>
+                </div>
+                
+                <div class="faq-item mb-4">
+                  <h4 class="fs-3" style="color: #fdd9a0; margin-top: 30px;">Q: Apakah tersedia varian tanpa gula?</h4>
+                  <p class="fs-5 ps-3" style="border-left: 4px solid #f3c27b; line-height: 1.6; margin-top: 10px;">A: Ya, kami menyediakan varian dark chocolate tanpa tambahan gula, cocok untuk diet rendah gula.</p>
+                </div>
+                
+                <div class="faq-item mb-4">
+                  <h4 class="fs-3" style="color: #fdd9a0; margin-top: 30px;">Q: Berapa lama daya tahan produk cokelat ini?</h4>
+                  <p class="fs-5 ps-3" style="border-left: 4px solid #f3c27b; line-height: 1.6; margin-top: 10px;">A: Cokelat kami bisa bertahan hingga 12 bulan jika disimpan di tempat sejuk dan kering.</p>
+                </div>
+                
+                <div class="faq-item">
+                  <h4 class="fs-3" style="color: #fdd9a0; margin-top: 30px;">Q: Apakah cokelat ini aman untuk anak-anak?</h4>
+                  <p class="fs-5 ps-3" style="border-left: 4px solid #f3c27b; line-height: 1.6; margin-top: 10px;">A: Sangat aman! Kami tidak menggunakan bahan pengawet atau pewarna buatan dalam produk kami.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-5 d-flex flex-column flex-md-row justify-content-between align-items-center" id="another" style="background-color: #20140b; padding-left: 10%; padding-right: 10%;">
+        <div class="text-white text-start pe-md-4 mb-4 mb-md-0" style="word-spacing: 5px; max-width: 45%; flex: 1 1;">
+          <h2 class="display-5 mb-3">Another attracting text heading</h2>
+          <p class="fs-4">Very engaging two or three liner description text about the product or service.</p>
+        </div>
+        
+        <a href="https://wa.me/62895363268652" class="btn fs-5 px-4 py-3 text-white" style="background-color: #3d2418; border-radius: 5px; white-space: nowrap;">
+          CTA Button
+        </a>
+      </section>
+      <footer id="contact" class="py-5" style="background-color: #3d2418; color: white; padding-left: 10%; padding-right: 10%;">
+        <div class="container-fluid">
+          <div class="row g-4">
+            <!-- About Column -->
+            <div class="col-md-4 col-lg-4">
+              <section class="h-100">
+                <h3 class="fs-4 mb-3">About Company</h3>
+                <p class="mb-0">Four or five liner short description about the company which provides products or services.</p>
+              </section>
+            </div>
+            
+            <!-- Contact Column -->
+            <div class="col-md-4 col-lg-4">
+              <section class="h-100">
+                <h3 class="fs-4 mb-3">Contact Information</h3>
+                <address>
+                  <p class="d-flex align-items-center mb-2">
+                    <i class="bi bi-envelope me-2"></i> faridahmadnr@gmail.com
+                  </p>
+                  <p class="d-flex align-items-center mb-2">
+                    <i class="bi bi-telephone me-2"></i> +(62)895363268652
+                  </p>
+                  <p class="d-flex align-items-center mb-0">
+                    <i class="bi bi-geo-alt me-2"></i> Jalan Kaliurang Km 10.9 Sleman Yogyakarta
+                  </p>
+                </address>
+              </section>
+            </div>
+            
+            <!-- Legal Column -->
+            <div class="col-md-4 col-lg-4">
+              <nav class="h-100">
+                <h3 class="fs-4 mb-3">Legal Pages</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-underline">Terms of use</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-underline">Disclaimer</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-underline">Privacy policy</a></li>
+                  <li><a href="#" class="text-white text-decoration-none hover-underline">Cookie Policy</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <style>
+        .hover-underline:hover {
+          text-decoration: underline !important;
+        }
+        
+        /* If you're not using Bootstrap Icons */
+        .bi::before {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background-color: white;
+          margin-right: 8px;
+          content: "";
+        }
+      </style>
+  </body>
+</html>
