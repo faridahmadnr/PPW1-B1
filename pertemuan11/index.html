@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .button {
+            margin: 20px 0;
+        }
+
+        .button button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: #2980b9;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 60%;
+        }
+
+        th, td {
+            padding: 12px 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h3>Membuat Calculator</h3>
+    <p >by:Farid</p>
+    <div class="button">
+        <button id="tambah" style="text-align: center" onclick="tambah()">Tambah</button>
+        <button id="kurang" style="text-align: center" onclick="kurang()">kurang</button>
+        <button id="kali" style="text-align: center" onclick="kali()">Kali</button>
+        <button id="bagi" style="text-align: center" onclick="bagi()">Bagi</button>
+    </div>
+    <table border="1">
+      <tr>
+        <th>Masukan Angka ke-1</th>
+        <th>Masukan Angka ke-2</th>
+        <th>Hasil</th>
+      </tr>
+      <tr>
+        <td id="angka1"></td>
+        <td id="angka2"></td>
+        <td id="hasil"></td>
+      </tr>
+    <script>
+        let angka1 = parseFloat(prompt("Masukkan bilangan pertama: "));
+        document.getElementById("angka1").innerHTML=angka1
+        let angka2 = parseFloat(prompt("Masukkan bilangan kedua: "));
+        document.getElementById("angka2").innerHTML=angka2
+    
+        function tambah(){
+            document.getElementById("hasil").innerHTML=angka1+angka2
+            }
+        function kurang(){
+            document.getElementById("hasil").innerHTML=angka1-angka2
+            }
+        function kali(){
+            document.getElementById("hasil").innerHTML=angka1*angka2
+            }
+        function bagi(){
+            document.getElementById("hasil").innerHTML=angka1/angka2
+            }
+    </script>
+</body>
+</html>
